@@ -1,0 +1,13 @@
+* Concurrency and async / await
+    - If you are using third party libraries that tell you to call them with await like,
+            results = await some_library()
+        Then, declare your path operation functions with async def like:
+            @app.get('/')
+            async def read_results():
+                results = await some_library()
+                return results
+    
+    - You can only use await inside of functions created with async def.
+    - use async def if the application need to communicate with anything else of wait for it to response.
+    - If you just don't know, use normal def.
+
