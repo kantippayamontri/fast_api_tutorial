@@ -9,3 +9,6 @@ run the program in production mode:
 fastapi run
 
 [] API
+
+localhost:8000 -> main path
+localhost:8000/docs -> documentation [open api]
